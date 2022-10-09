@@ -63,7 +63,7 @@ Please see [data/README.md](data/README.md) for generation or download from [her
 │       └── trainval_label2ans.json
 ```
 
-## Model
+## Method 
 
 ```bash
 bash train.sh 
@@ -82,7 +82,5 @@ If you find our work useful in your research, please consider citing:
   year={2022}
 }
 ```
-
-[//]: # (## Acknowledgement)
 
 
