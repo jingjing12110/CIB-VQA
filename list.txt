@@ -1,0 +1,119 @@
+.
+├── cs_evaluate.py
+├── data
+│   ├── cv_vqa
+│   │   ├── edited_targets.json
+│   │   └── original_targets.json
+│   ├── iv_vqa
+│   │   ├── edited_targets.json
+│   │   └── original_targets.json
+│   ├── lxmert
+│   │   └── all_ans.json
+│   ├── process_lib
+│   │   ├── annotation_process.py
+│   │   ├── __init__.py
+│   │   ├── preprocess_advqa.py
+│   │   ├── preprocess_avqa.py
+│   │   ├── preprocess_cv_vqa.py
+│   │   ├── preprocess_data.py
+│   │   ├── preprocess_iv_vqa.py
+│   │   ├── preprocess_vqa_ce.py
+│   │   ├── preprocess_vqa_p2.py
+│   │   ├── preprocess_vqa_rep.py
+│   │   └── tsv2h5.py
+│   ├── README.md
+│   ├── vqa_ce
+│   │   ├── all_targets.json
+│   │   ├── counterexample_targets.json
+│   │   ├── easy_targets.json
+│   │   └── hard_targets.json
+│   ├── vqa_p2
+│   │   ├── vqa_p2_original_targets.json
+│   │   └── vqa_p2_targets.json
+│   ├── vqa_rep
+│   │   └── val2014_humans_vqa-rephrasings_targets.json
+│   └── vqav2
+│       ├── img_id_wh
+│       │   ├── test.json
+│       │   ├── train.json
+│       │   ├── trainval.json
+│       │   └── val.json
+│       ├── minival.json
+│       ├── nominival.json
+│       ├── test.json
+│       ├── train.json
+│       ├── trainval_ans2label.json
+│       └── trainval_label2ans.json
+├── data_loader
+│   ├── base_dataset.py
+│   ├── cvvqa_dataset.py
+│   ├── ivvqa_dataset.py
+│   ├── vqace_dataset.py
+│   ├── vqacpv2_dataset.py
+│   ├── vqap2_dataset.py
+│   ├── vqar_dataset.py
+│   └── vqav2_dataset.py
+├── __init__.py
+├── list.txt
+├── lxrt
+│   ├── entry.py
+│   ├── file_utils.py
+│   ├── modeling.py
+│   ├── optimization.py
+│   └── tokenization.py
+├── metric.py
+├── module
+│   ├── base_lib
+│   │   ├── attention.py
+│   │   ├── classifier.py
+│   │   ├── fc.py
+│   │   ├── image_sentence_ranking.py
+│   │   ├── __init__.py
+│   │   └── language_model.py
+│   ├── graph_lib
+│   │   ├── am_gcn.py
+│   │   ├── bipartite_graph.py
+│   │   ├── dgi.py
+│   │   ├── gat.py
+│   │   ├── gcn.py
+│   │   ├── gib.py
+│   │   ├── gin.py
+│   │   ├── graph_normalization.py
+│   │   ├── graph_transformer.py
+│   │   ├── hgib.py
+│   │   ├── __init__.py
+│   │   └── over_smoothing_metrics.py
+│   ├── ib_lib
+│   │   ├── dib.py
+│   │   ├── dvib.py
+│   │   ├── hsic.py
+│   │   ├── info_nce.py
+│   │   ├── __init__.py
+│   │   ├── mib.py
+│   │   ├── mi_estimator.py
+│   │   ├── mi.py
+│   │   └── nonlinear_ib.py
+│   ├── __init__.py
+│   └── mi_lib
+│       ├── flo.py
+│       ├── __init__.py
+│       ├── lower_bound.py
+│       └── upper_bound.py
+├── param.py
+├── pretrain
+│   ├── __init__.py
+│   ├── lxmert_data.py
+│   ├── lxmert_pretrain.py
+│   └── qa_answer_table.py
+├── README.md
+├── requirements.txt
+├── snap
+│   └── pretrained
+├── trainer.py
+├── train.py
+├── train.sh
+├── utils.py
+├── vqa_data.py
+└── vqa_model.py
+
+20 directories, 96 files
