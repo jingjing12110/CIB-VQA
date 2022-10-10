@@ -3,7 +3,7 @@
 Pytorch code (lite version) of Finetuning Pretrained Vision-Language Models with Correlation Information Bottleneck for Robust Visual Question Answering 
 [[Paper](https://arxiv.org/pdf/2209.06954.pdf)] [[Slide](https://drive.google.com/file/d/12p1Pi9eWrlm3n57zQoZcps1IVqlT025V/view?usp=sharing)]. 
 
-This repository is based on [LXMERT](https://github.com/airsplay/lxmert). 
+This repository is based on [LXMERT](https://github.com/airsplay/lxmert). Thanks for their pioneering work.
 
 
 ## Installation
