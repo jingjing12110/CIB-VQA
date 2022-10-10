@@ -1,7 +1,7 @@
 # CIB-VQA 
 
 Pytorch code (lite version) of [Finetuning Pretrained Vision-Language Models with Correlation Information Bottleneck for Robust Visual Question Answering 
-](https://arxiv.org/pdf/2209.06954.pdf) [[Slide](https://drive.google.com/file/d/12p1Pi9eWrlm3n57zQoZcps1IVqlT025V/view?usp=sharing)]. 
+](https://arxiv.org/pdf/2209.06954.pdf). [[Slide](https://drive.google.com/file/d/12p1Pi9eWrlm3n57zQoZcps1IVqlT025V/view?usp=sharing)]
 
 This implementation is based on [LXMERT](https://github.com/airsplay/lxmert). Thanks for their pioneering work.
 
