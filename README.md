@@ -26,19 +26,6 @@ Please see [data/README.md](data/README.md) for generation or download from [her
 │   │   └── original_targets.json
 │   ├── lxmert
 │   │   └── all_ans.json
-│   ├── process_lib
-│   │   ├── annotation_process.py
-│   │   ├── __init__.py
-│   │   ├── preprocess_advqa.py
-│   │   ├── preprocess_avqa.py
-│   │   ├── preprocess_cv_vqa.py
-│   │   ├── preprocess_data.py
-│   │   ├── preprocess_iv_vqa.py
-│   │   ├── preprocess_vqa_ce.py
-│   │   ├── preprocess_vqa_p2.py
-│   │   ├── preprocess_vqa_rep.py
-│   │   └── tsv2h5.py
-│   ├── README.md
 │   ├── vqa_ce
 │   │   ├── all_targets.json
 │   │   ├── counterexample_targets.json
