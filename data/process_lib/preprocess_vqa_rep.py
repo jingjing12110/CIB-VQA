@@ -21,16 +21,16 @@ def rewrite_annotation():
     # }
     
     rephrase_ann_file = 'raw/v2_mscoco_valrep2014_humans_og_annotations.json'
-    # rephrase_que_file =
-    # 'raw/v2_OpenEnded_mscoco_valrep2014_humans_og_questions.json'
-    # rephrase_ques = load_json(
-    #     os.path.join(source_dir, rephrase_que_file))['questions']
-    
+
     rephrase_anns = load_json(os.path.join(
         source_dir, rephrase_ann_file))['annotations']
     
-    rephrase_ques = load_json(os.path.join(
-        source_dir, 'val2014_humans_vqa-rephrasings_questions.json'))
+    rephrase_que_file = \
+        'raw/v2_OpenEnded_mscoco_valrep2014_humans_og_questions.json'
+    rephrase_ques = load_json(
+        os.path.join(source_dir, rephrase_que_file))['questions']
+    # rephrase_ques = load_json(os.path.join(
+    #     source_dir, 'val2014_humans_vqa-rephrasings_questions.json'))
     
     print(f'original len of rephrase_anns: {len(rephrase_anns)}')
     
