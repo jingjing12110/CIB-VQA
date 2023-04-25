@@ -171,7 +171,7 @@ class VQA:
                 self.optim.zero_grad()
                 self.model.zero_grad()
                 
-                total_loss += loss
+                total_loss += loss.item()
                 for qid, l in zip(
                         ques_id, outputs['logit'].max(1)[1].cpu().numpy()):
                     quesid2ans[qid.item()] = dset.label2ans[l]  # ans
@@ -179,7 +179,7 @@ class VQA:
                 if self.args.tf_writer:
                     self.writer.add_scalar(
                         'Train/batch_loss',
-                        loss,
+                        loss.item(),
                         train_iter
                     )
                     self.writer.add_scalar(
@@ -289,7 +289,7 @@ class VQA:
                 if self.args.tf_writer:
                     self.writer.add_scalar(
                         'Train/batch_loss',
-                        loss,
+                        loss.item(),
                         train_iter
                     )
                     # self.writer.add_scalar(
@@ -333,7 +333,7 @@ class VQA:
                     #     train_iter
                     # )
                 train_iter += 1
-                desc_str = f'Epoch {epoch} | loss {loss:.4f} ' \
+                desc_str = f'Epoch {epoch} | loss {loss.item():.4f} ' \
                            f'| cib {cib_loss_i:.4f} | mi_lg {mi_lg_loss_i:.4f}'
                 pbar.set_description(desc_str)
                 pbar.update(1)
