@@ -13,9 +13,9 @@ cp $0 $output/run.sh
 CUDA_VISIBLE_DEVICES=$1 PYTHONPATH=$PYTHONPATH:./src \
     python train.py \
     --train train --valid val \
-    --numWorkers 8 --beta 1e-3 \
+    --numWorkers 8 --beta 5e-5 \
     --loadLXMERT "snap/pretrained/Epoch20" \
-    --bs 104 --optim AdamW --lr 3e-5 --epochs 10 \
+    --bs 64 --optim AdamW --lr 2e-5 --epochs 10 \
     --warmup_ratio 0.1 --lr_mode cosine \
     --tqdm --tf_writer True \
     --output $output ${@:3}
